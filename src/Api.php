@@ -39,21 +39,28 @@ class Api
      * Validate a phone number
      *
      * @param string $phoneNumber
+     * @param string $countryCode
      *
      * @return PhoneNumberInterface|PhoneNumber\ValidPhoneNumber|PhoneNumber\InvalidPhoneNumber
      *
      * @throws \RuntimeException
      */
-    public function validatePhoneNumber(string $phoneNumber): PhoneNumberInterface
+    public function validatePhoneNumber(string $phoneNumber, string $countryCode = null): PhoneNumberInterface
     {
+        $query = [
+            'access_key' => $this->accessKey,
+            'number'     => $phoneNumber,
+        ];
+
+        if ($countryCode !== null) {
+            $query['country_code'] = $countryCode;
+        }
+
         $result = $this->client->request(
             'GET',
             '/validate',
             [
-                'query' => [
-                    'access_key' => $this->accessKey,
-                    'number'     => $phoneNumber,
-                ]
+                'query' => $query,
             ]
         );
         $this->validateResponse($result);

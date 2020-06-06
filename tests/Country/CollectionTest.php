@@ -1,5 +1,5 @@
 <?php
-namespace Numverify\Tests;
+namespace Numverify\Tests\Country;
 
 use Numverify\Country\Country;
 use Numverify\Country\Collection;

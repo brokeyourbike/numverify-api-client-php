@@ -1,5 +1,5 @@
 <?php
-namespace Numverify\Tests\PhoneNumber;
+namespace Numverify\Tests\Exception;
 
 use Numverify\Exception\NumverifyApiResponseException;
 

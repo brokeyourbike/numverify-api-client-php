@@ -61,17 +61,6 @@ class Country implements \JsonSerializable
     }
 
     /**
-     * String representation
-     * CountryCode: CountryName (DialingCode)
-     *
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return sprintf('%s: %s (%s)', $this->countryCode, $this->countryName, $this->dialingCode);
-    }
-
-    /**
      * JsonSerializable interface
      *
      * @return array

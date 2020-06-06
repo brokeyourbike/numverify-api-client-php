@@ -3,9 +3,9 @@ Numverify API Client Library for PHP
 
 Numverify phone number validation and country API client library for PHP.
 
-[![Coverage Status](https://coveralls.io/repos/github/markrogoyski/numverify-api-client-php/badge.svg?branch=master)](https://coveralls.io/github/markrogoyski/numverify-api-client-php?branch=master)
-[![Build Status](https://travis-ci.org/markrogoyski/numverify-api-client-php.svg?branch=master)](https://travis-ci.org/markrogoyski/numverify-api-client-php)
-[![License](https://poser.pugx.org/markrogoyski/math-php/license)](https://packagist.org/packages/markrogoyski/numverify-api-client-php)
+[![Coverage Status](https://coveralls.io/repos/github/brokeyourbike/numverify-api-client-php/badge.svg?branch=master)](https://coveralls.io/github/brokeyourbike/numverify-api-client-php?branch=master)
+[![Build Status](https://travis-ci.org/brokeyourbike/numverify-api-client-php.svg?branch=master)](https://travis-ci.org/brokeyourbike/numverify-api-client-php)
+[![License](https://poser.pugx.org/brokeyourbike/math-php/license)](https://packagist.org/packages/brokeyourbike/numverify-api-client-php)
 
 Features
 --------
@@ -29,7 +29,7 @@ Setup
 ```javascript
 {
   "require": {
-      "markrogoyski/numverify-api-client-php": "0.*"
+      "brokeyourbike/numverify-api-client-php": "0.*"
   }
 }
 ```
@@ -50,7 +50,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Alternatively, use composer on the command line to require and install Numverify API Client Library:
 
 ```
-$ php composer.phar require markrogoyski/numverify-ali-client-php:0.*
+$ php composer.phar require brokeyourbike/numverify-ali-client-php:0.*
 ```
 
 ### Minimum Requirements
@@ -84,7 +84,6 @@ if ($validatedPhoneNumber->isValid()) {
 }
  
 // PHP Interfaces
-$stringRepresentation = (string) $validatedPhoneNumber;
 $jsonRepresentation   = json_encode($validatedPhoneNumber);
 ``` 
  
@@ -117,7 +116,6 @@ $numberOfCountries  = count($countries);
 $jsonRepresentation = json_encode($numberOfCountries);
  
 // Country PHP interfaces
-$stringRepresentation = (string) $unitedStates;      // US: United States (+1)
 $jsonRepresentation   = json_encode($unitedStates);
 ```
 
@@ -156,7 +154,7 @@ $ cd tests
 $ phpunit
 ```
 
-[![Coverage Status](https://coveralls.io/repos/github/markrogoyski/numverify-api-client-php/badge.svg?branch=master)](https://coveralls.io/github/markrogoyski/numverify-api-client-php?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/brokeyourbike/numverify-api-client-php/badge.svg?branch=master)](https://coveralls.io/github/brokeyourbike/numverify-api-client-php?branch=master)
 
 Standards
 ---------

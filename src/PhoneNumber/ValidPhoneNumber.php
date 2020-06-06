@@ -164,15 +164,6 @@ class ValidPhoneNumber implements PhoneNumberInterface, \JsonSerializable
         return $this->lineType;
     }
 
-    /**
-     * String representation
-     *
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return $this->number;
-    }
 
     /**
      * JsonSerialize interface

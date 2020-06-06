@@ -47,16 +47,6 @@ class InvalidPhoneNumber implements PhoneNumberInterface, \JsonSerializable
     }
 
     /**
-     * String representation
-     *
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return $this->number;
-    }
-
-    /**
      * JsonSerialize interface
      *
      * @return array

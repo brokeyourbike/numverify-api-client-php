@@ -7,10 +7,11 @@ tests :
 
 lint :
 	vendor/bin/phpcs --standard=coding_standard.xml --ignore=vendor .
+	# vendor/bin/phpcbf --standard=coding_standard.xml --ignore=vendor .
 
 static :
-	vendor/bin/phpstan analyze --level max src/ tests/
-	vendor/bin/phpmd src/ text cleancode,codesize,design,unusedcode,naming
+	vendor/bin/phpstan analyze -c phpstan.neon
+	vendor/bin/phpmd src/ text codesize,design,unusedcode
 
 coverage :
 	vendor/bin/phpunit tests/ --configuration=tests/phpunit.xml --coverage-text=php://stdout

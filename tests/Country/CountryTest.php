@@ -25,21 +25,6 @@ class CountryTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @testCase String representation
-     */
-    public function testStringRepresentation()
-    {
-        // Given
-        $country = new Country(self::COUNTRY_CODE, self::COUNTRY_NAME, self::DIALLING_CODE);
-
-        // When
-        $stringRepresentation = (string)$country;
-
-        // Then
-        $this->assertSame('US: United States (+1)', $stringRepresentation);
-    }
-
-    /**
      * @testCase JsonSerialize interface
      */
     public function testJsonSerializeInterface()

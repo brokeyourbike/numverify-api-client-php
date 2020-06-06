@@ -37,21 +37,6 @@ class InvalidPhoneNumberTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @testCase String representation
-     */
-    public function testToString()
-    {
-        // Given
-        $phoneNumber = new InvalidPhoneNumber($this->validatedPhoneNumberData);
-
-        // When
-        $stringRepresentation = (string) $phoneNumber;
-
-        // Then
-        $this->assertSame(self::NUMBER, $stringRepresentation);
-    }
-
-    /**
      * @testCase JsonSerializable interface
      */
     public function testJsonSerialize()

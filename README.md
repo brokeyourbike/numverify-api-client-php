@@ -5,7 +5,8 @@ Numverify phone number validation and country API client library for PHP.
 
 [![Coverage Status](https://coveralls.io/repos/github/brokeyourbike/numverify-api-client-php/badge.svg?branch=master)](https://coveralls.io/github/brokeyourbike/numverify-api-client-php?branch=master)
 [![Build Status](https://travis-ci.org/brokeyourbike/numverify-api-client-php.svg?branch=master)](https://travis-ci.org/brokeyourbike/numverify-api-client-php)
-[![License](https://poser.pugx.org/brokeyourbike/math-php/license)](https://packagist.org/packages/brokeyourbike/numverify-api-client-php)
+[![Total Downloads](https://poser.pugx.org/brokeyourbike/numverify-api-client-php/downloads)](//packagist.org/packages/brokeyourbike/numverify-api-client-php)
+[![License](https://poser.pugx.org/brokeyourbike/numverify-api-client-php/license)](//packagist.org/packages/brokeyourbike/numverify-api-client-php)
 
 Features
 --------

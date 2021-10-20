@@ -19,7 +19,14 @@ composer require brokeyourbike/numverify-api-client-php
 ## Usage
 
 ```php
+use BrokeYourBike\Numverify\Client;
+
+$apiClient = new Client($config, $httpClient);
+$result = $apiClient->validatePhoneNumber($phoneNumber, $countryCode);
 ```
+
+## Acknowledgment
+Inspired by [markrogoyski/numverify-api-client-php](https://github.com/markrogoyski/numverify-api-client-php)
 
 ## License
 [Mozilla Public License v2.0](https://github.com/brokeyourbike/numverify-api-client-php/blob/main/LICENSE)

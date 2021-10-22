@@ -25,7 +25,6 @@
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
         "brokeyourbike/http-client": "^1.0",
-        "brokeyourbike/json-request-result": "^1.0",
         "brokeyourbike/resolve-uri": "^1.0"
     },
     "require-dev": {

@@ -82,7 +82,11 @@ final class ApiFailureException extends \RuntimeException
      */
     private function parseMessageFromBody(string $jsonBody): string
     {
-        $body = json_decode($jsonBody);
+        $body = json_decode($jsonBody, false);
+
+        if (!is_object($body)) {
+            return "Cannot decode response - {$this->statusCode}";
+        }
 
         if (!isset($body->error)) {
             return "Unknown error - {$this->statusCode} {$this->getReasonPhrase()}";

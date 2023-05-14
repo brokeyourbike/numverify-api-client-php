@@ -44,7 +44,7 @@ class InvalidPhoneNumber implements PhoneNumberInterface
      */
     public function isValid(): bool
     {
-        return false;
+        return $this->valid;
     }
 
     /**

@@ -29,4 +29,12 @@ final class ApiResponseException extends \RuntimeException
 
         parent::__construct($message);
     }
+
+    /**
+     * @return \stdClass
+     */
+    public function getPhoneNumberData(): \stdClass
+    {
+        return $this->phoneNumberData;
+    }
 }

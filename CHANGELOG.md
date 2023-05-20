@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.2](https://www.github.com/brokeyourbike/numverify-api-client-php/compare/v0.1.1...v0.1.2) (2023-05-20)
+
+
+### Miscellaneous Chores
+
+* button ([16ed2d9](https://www.github.com/brokeyourbike/numverify-api-client-php/commit/16ed2d911f9be148869f9846823fbae184fb7cbe))
+
 ### [0.1.1](https://www.github.com/brokeyourbike/numverify-api-client-php/compare/v0.1.0...v0.1.1) (2023-05-14)
 
 
